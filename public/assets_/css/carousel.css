@@ -1,0 +1,32 @@
+.carousel-item {
+  height: 800px;
+  margin-top: -40px;
+}
+
+.carousel-indicators li {
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+}
+.carousel-indicators {
+  margin-bottom: 150px;
+}
+.carousel-caption {
+  top: 45%;
+  bottom: auto;
+}
+.carousel-caption h5 {
+  text-shadow: black;
+  font-size: 48px;
+  color: white;
+}
+.carousel-item:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.4);
+}

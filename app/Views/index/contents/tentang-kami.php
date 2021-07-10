@@ -31,7 +31,7 @@
             <div class="col-md-6 py-5 pl-md-5">
                 <div class="row justify-content-center mb-4 pt-md-4">
                     <div class="col-md-12 heading-section ftco-animate">
-                        <span class="subheading">Selamat Datang di Express.co.id</span>
+                        <span class="subheading">Selamat Datang di Ethree.co.id</span>
                         <h2 class="mb-4">Kargo Yang Terbukti Cepat Handal dan Terpercaya</h2>
                         <p>Kami selalu mengutamakan kepuasan pelanggan, dengan slogan kami yaitu Cepat, Handal, dan Bisa Dipercaya, adalah banyak dari konsumen kita yang memberikan nilai bagus kepada kami.</p>
                     </div>

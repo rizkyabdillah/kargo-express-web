@@ -6,7 +6,7 @@
                     <div class="icon d-flex justify-content-center align-items-center">
                         <img src="<?= base_url(); ?>/assets_/images/logo1.png" class="mr-1">
                     </div>
-                    <span>Express <small>Cepat, Handal, dan Terpercaya</small></span>
+                    <span> Ethree <small> Three Time Faster</small></span>
                 </a>
             </div>
             <div class="col-md-4 d-flex topper mb-md-0 mb-2 align-items-center ">

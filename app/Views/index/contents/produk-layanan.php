@@ -34,8 +34,8 @@
                 <div class="services-wrap ftco-animate">
                     <div class="img" style="background-image: url(<?= base_url(); ?>/assets_/images/COD2.png);"></div>
                     <div class="text">
-                        <h2>Express COD Retail</h2>
-                        <p>COD (Cash On Delivery) Retail adalah fitur pembayaran bagi online seller yang melakukan pengiriman barang dengan menggunakan layanan Express.</p>
+                        <h2>Ethree COD Retail</h2>
+                        <p>COD (Cash On Delivery) Retail adalah fitur pembayaran bagi online seller yang melakukan pengiriman barang dengan menggunakan layanan Ethree.</p>
                     </div>
                 </div>
             </div>
@@ -43,7 +43,7 @@
                 <div class="services-wrap ftco-animate">
                     <div class="img" style="background-image: url(<?= base_url(); ?>/assets_/images/ss2.png);"></div>
                     <div class="text">
-                        <h2>Express Super Speed</h2>
+                        <h2>Ethree Super Speed</h2>
                         <p>SUPER SPEED (SS) adalah layanan pengiriman dengan mengutamakan kecepatan dan penyampaiannya sesuai dengan waktu yang telah ditentukan/disepakati.</p>
                     </div>
                 </div>
@@ -52,7 +52,7 @@
                 <div class="services-wrap ftco-animate">
                     <div class="img" style="background-image: url(<?= base_url(); ?>/assets_/images/EX2.png);"></div>
                     <div class="text">
-                        <h2>Express Regular</h2>
+                        <h2>Ethree Regular</h2>
                         <p>REGULER adalah layanan pengiriman ke seluruh wilayah Indonesia, dengan perkiraan waktu penyampaian kiriman 1-7 hari kerja, tergantung pada zona daerah yang menjadi tujuan pengiriman.</p>
                     </div>
                 </div>
@@ -61,8 +61,8 @@
                 <div class="services-wrap ftco-animate">
                     <div class="img" style="background-image: url(<?= base_url(); ?>/assets_/images/PUP.png);"></div>
                     <div class="text">
-                        <h2>Express PUP (PickUp Point)</h2>
-                        <p>Express Pick-Up Point adalah layanan alternatif pelanggan dalam proses penerimaan kiriman.</p>
+                        <h2>Ethree PUP (PickUp Point)</h2>
+                        <p>Ethree Pick-Up Point adalah layanan alternatif pelanggan dalam proses penerimaan kiriman.</p>
                     </div>
                 </div>
             </div>
@@ -70,8 +70,8 @@
                 <div class="services-wrap ftco-animate">
                     <div class="img" style="background-image: url(<?= base_url(); ?>/assets_/images/Int_services.png);"></div>
                     <div class="text">
-                        <h2>Express International Service</h2>
-                        <p>Express Internasional adalah layanan pengiriman dengan tujuan ke luar negeri.</p>
+                        <h2>Ethree International Service</h2>
+                        <p>Ethree Internasional adalah layanan pengiriman dengan tujuan ke luar negeri.</p>
                     </div>
                 </div>
             </div>
@@ -79,7 +79,7 @@
                 <div class="services-wrap ftco-animate">
                     <div class="img" style="background-image: url(<?= base_url(); ?>/assets_/images/PopBox.png);"></div>
                     <div class="text">
-                        <h2>Express Pop Box</h2>
+                        <h2>Ethree Pop Box</h2>
                         <p>PopBox menawarkan kemudahan untuk Anda tanpa harus berada di rumah atau kantor ketika barang kiriman anda tiba, karena anda bisa mengambilnya langsung di lokasi loker terdekat. </p>
                     </div>
                 </div>

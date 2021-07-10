@@ -132,7 +132,6 @@ class LoginController extends BaseController
 
     public function getBcrypt($prefix)
     {
-        # code...
         echo (password_hash($prefix, PASSWORD_BCRYPT));
     }
 

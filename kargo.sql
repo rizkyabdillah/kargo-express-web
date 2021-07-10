@@ -485,7 +485,7 @@ CREATE ALGORITHM=UNDEFINED SQL SECURITY DEFINER VIEW `VIEW_CEK_HARGA`  AS  selec
 --
 DROP TABLE IF EXISTS `VIEW_DETAIL_JALUR`;
 
-CREATE ALGORITHM=UNDEFINED SQL SECURITY DEFINER VIEW `VIEW_DETAIL_JALUR`  AS  select `detail_jalur`.`id_jalur` AS `id_jalur`,`detail_jalur`.`id_kargo` AS `id_kargo`,`nama_kargo` AS `nama_kargo`,`detail_jalur`.`harga` AS `harga` from (`detail_jalur` join `kargo`) where `detail_jalur`.`id_kargo` = `id_kargo` ;
+CREATE ALGORITHM=UNDEFINED SQL SECURITY DEFINER VIEW `VIEW_DETAIL_JALUR`  AS  select `detail_jalur`.`id_jalur` AS `id_jalur`,`detail_jalur`.`id_kargo` AS `id_kargo`,`nama_kargo` AS `nama_kargo`,`detail_jalur`.`harga` AS `harga` from (`detail_jalur` join `kargo`) where `detail_jalur`.`id_kargo` = `kargo`.`id_kargo` ;
 
 -- --------------------------------------------------------
 

@@ -8,11 +8,11 @@
                         <a href="<?= base_url(); ?>">
                             <div class="icon d-flex justify-content-center align-items-center">
                                 <img src="<?= base_url(); ?>/assets_/images/logo1.png" class="mr-1" height="20">
-                                <span>Express</span>
+                                <span>Ethree</span>
                             </div>
                         </a>
                     </h2>
-                    <p>CEPAT, HANDAL, DAN TERPERCAYA.</p>
+                    <p>Three Time Faster.</p>
                     <ul class="ftco-footer-social list-unstyled mt-4 ">
                         <li><a href="# "><span class="fa fa-twitter "></span></a></li>
                         <li><a href="# "><span class="fa fa-facebook "></span></a></li>
@@ -65,7 +65,7 @@
                             <li>
                                 <a href="mailto:express@gmail.com">
                                     <span class="fa fa-paper-plane mr-3 "></span>
-                                    <span class="text ">express@gmail.com</span>
+                                    <span class="text ">ethree@gmail.com</span>
                                 </a>
                             </li>
                         </ul>
@@ -82,7 +82,7 @@
                     Copyright &copy;
                     <script>
                         document.write(new Date().getFullYear());
-                    </script> All rights reserved | express.co.id</a>
+                    </script> All rights reserved | ethree.co.id</a>
                 </p>
             </div>
         </div>

@@ -58,7 +58,7 @@
                             </div>
                         </div>
                         <div class="simple-footer">
-                            Copyright &copy; Express <?= date('Y'); ?>
+                            Copyright &copy; Ethree <?= date('Y'); ?>
                         </div>
                     </div>
                 </div>

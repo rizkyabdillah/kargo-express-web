@@ -25,6 +25,7 @@
                             <th>Email</th>
                             <th>No Telpon</th>
                             <th>Username</th>
+                            <th>Foto</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -48,6 +49,9 @@
                                 <?php for ($j = 1; $j < count($arr) - 1; $j++) : ?>
                                     <td><?= $arr[$j]; ?></td>
                                 <?php endfor ?>
+                                <td>
+                                    <img src="<?= base_url() ?>/assets/img/<?= $arr[count($arr) - 1]; ?>" width="50" height="50"/>
+                                </td>
                             </tr>
                         <?php endforeach ?>
                     </tbody>

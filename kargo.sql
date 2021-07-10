@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Waktu pembuatan: 16 Jan 2021 pada 13.21
+-- Waktu pembuatan: 10 Jul 2021 pada 13.04
 -- Versi server: 10.4.14-MariaDB
 -- Versi PHP: 7.3.22
 
@@ -30,65 +30,67 @@ SET time_zone = "+00:00";
 CREATE TABLE `detail_jalur` (
   `id_jalur` char(4) NOT NULL,
   `id_kargo` char(4) NOT NULL,
-  `harga` int(11) NOT NULL
+  `harga` int(11) NOT NULL,
+  `status` varchar(3) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Dumping data untuk tabel `detail_jalur`
 --
 
-INSERT INTO `detail_jalur` (`id_jalur`, `id_kargo`, `harga`) VALUES
-('XH6Z', '7H32', 110000),
-('XH6Z', 'HE83', 60000),
-('UYIM', '7H32', 110000),
-('QX0B', 'HE83', 35000),
-('Z06N', '7H32', 70000),
-('Z06N', '2K82', 65000),
-('4P2P', '2K82', 45000),
-('4P2P', '7H32', 65000),
-('4P2P', 'HE83', 35000),
-('AWOX', '2K82', 45000),
-('AWOX', '7H32', 65000),
-('AWOX', 'HE83', 35000),
-('BSCA', '2K82', 45000),
-('BSCA', '7H32', 65000),
-('save', 'HE83', 35000),
-('save', '7H32', 45000),
-('save', '2K82', 45000),
-('C0YH', '2K82', 45000),
-('C0YH', '7H32', 65000),
-('C0YH', 'HE83', 35000),
-('EJVH', '2K82', 45000),
-('EJVH', '7H32', 65000),
-('EJVH', 'HE83', 35000),
-('FELE', '2K82', 45000),
-('FELE', '7H32', 65000),
-('FELE', 'HE83', 35000),
-('Z06N', 'HE83', 45000),
-('K5XR', '7H32', 100000),
-('K5XR', '2K82', 75000),
-('K5XR', 'HE83', 65000),
-('J2YR', '7H32', 95000),
-('J2YR', '2K82', 80000),
-('J2YR', 'HE83', 75000),
-('HZR4', '7H32', 130000),
-('HZR4', 'HE83', 80000),
-('HZR4', '2K82', 65000),
-('GI5A', '2K82', 55000),
-('GI5A', '7H32', 80000),
-('GI5A', 'HE83', 45000),
-('UYIM', '2K82', 80000),
-('UYIM', 'HE83', 60000),
-('SAVL', '2K82', 35000),
-('XSQO', '2K82', 25000),
-('XH6Z', '2K82', 75000),
-('QX0B', '2K82', 65000),
-('QX0B', '7H32', 110000),
-('NM1E', '2K82', 35000),
-('MUXZ', '2K82', 35000),
-('MPW3', '2K82', 35000),
-('LO2L', '2K82', 15000),
-('UZ5C', '2K82', 100000);
+INSERT INTO `detail_jalur` (`id_jalur`, `id_kargo`, `harga`, `status`) VALUES
+('XH6Z', '7H32', 110000, ''),
+('XH6Z', 'HE83', 60000, ''),
+('UYIM', '7H32', 110000, ''),
+('QX0B', 'HE83', 35000, ''),
+('4P2P', '2K82', 45000, ''),
+('4P2P', '7H32', 65000, ''),
+('4P2P', 'HE83', 35000, ''),
+('AWOX', '2K82', 45000, ''),
+('AWOX', '7H32', 65000, ''),
+('AWOX', 'HE83', 35000, ''),
+('BSCA', '2K82', 45000, ''),
+('BSCA', '7H32', 65000, ''),
+('save', '7H32', 45000, ''),
+('save', '2K82', 45000, ''),
+('C0YH', '2K82', 45000, ''),
+('C0YH', '7H32', 65000, ''),
+('C0YH', 'HE83', 35000, ''),
+('EJVH', '2K82', 45000, ''),
+('EJVH', '7H32', 65000, ''),
+('EJVH', 'HE83', 35000, ''),
+('FELE', '2K82', 45000, ''),
+('FELE', '7H32', 65000, ''),
+('FELE', 'HE83', 35000, ''),
+('K5XR', '7H32', 100000, ''),
+('K5XR', '2K82', 75000, ''),
+('K5XR', 'HE83', 65000, ''),
+('J2YR', '7H32', 95000, ''),
+('J2YR', '2K82', 80000, ''),
+('J2YR', 'HE83', 75000, ''),
+('HZR4', '7H32', 130000, ''),
+('HZR4', 'HE83', 80000, ''),
+('HZR4', '2K82', 65000, ''),
+('GI5A', '2K82', 55000, ''),
+('GI5A', '7H32', 80000, ''),
+('GI5A', 'HE83', 45000, ''),
+('UYIM', '2K82', 80000, ''),
+('UYIM', 'HE83', 60000, ''),
+('SAVL', '2K82', 35000, ''),
+('XSQO', '2K82', 25000, ''),
+('XH6Z', '2K82', 75000, ''),
+('QX0B', '2K82', 65000, ''),
+('QX0B', '7H32', 110000, ''),
+('NM1E', '2K82', 35000, ''),
+('MUXZ', '2K82', 35000, ''),
+('MPW3', '2K82', 35000, ''),
+('LO2L', '2K82', 15000, ''),
+('UZ5C', '2K82', 100000, ''),
+('XSQO', '7H32', 50000, ''),
+('save', 'HE83', 35000, 'T'),
+('Z06N', '7H32', 35000, 'T'),
+('Z06N', 'HE83', 35000, 'T'),
+('Z06N', '2K82', 35000, 'A');
 
 -- --------------------------------------------------------
 
@@ -107,8 +109,10 @@ CREATE TABLE `detail_transaksi` (
 --
 
 INSERT INTO `detail_transaksi` (`no_resi`, `id_pelanggan`, `diskon`) VALUES
-('EX02514', 'VHND', 'TIDAK'),
-('EX63189', 'VHND', 'YA');
+('EX36792', 'VSC4', 'YA'),
+('EX57832', 'DKZS', 'YA'),
+('EX57962', 'ASI1', 'YA'),
+('EX90523', 'FRYE', 'YA');
 
 -- --------------------------------------------------------
 
@@ -129,8 +133,10 @@ CREATE TABLE `info_barang` (
 --
 
 INSERT INTO `info_barang` (`id_barang`, `nama_barang`, `id_jenis`, `berat`, `keterangan`) VALUES
-('F1XR', 'Laptop DELL 43SA', 'U266', 2, 'Barang berisi paket laptop'),
-('YLEJ', 'Laptop DELL 43SA', 'U266', 2, 'Barang berisi paket laptop');
+('7D3M', 'Laptop MSI', 'U266', 10, 'Barang berisi laptop'),
+('P60A', 'Laptop MSI', 'U266', 10, 'Barang berisi laptop'),
+('QCYY', 'Laptop MSI', 'U266', 10, 'Barang berisi laptop'),
+('RHNR', 'Laptop MSI', 'U266', 10, 'Barang berisi laptop');
 
 -- --------------------------------------------------------
 
@@ -151,8 +157,10 @@ CREATE TABLE `info_penerima` (
 --
 
 INSERT INTO `info_penerima` (`id_penerima`, `nama_penerima`, `no_telp`, `alamat`, `kode_pos`) VALUES
-('BMG2', 'Yunia Maulidia', '0826', 'Jl. Paku Bumi, Rungkut', '67253'),
-('SGIJ', 'Yunia Maulidia', '0826', 'Jl. Paku Bumi, Rungkut', '67253');
+('0KRY', 'Alvin', '0891', 'Jl. blabla', '12345'),
+('86YC', 'Alvin', '0893', 'Jl. blabla', '12312'),
+('H0VN', 'Josh', '0892', 'Jl. blabla', '12312'),
+('I4XN', 'Alvin', '0891', 'Jl. blabla', '12312');
 
 -- --------------------------------------------------------
 
@@ -173,8 +181,10 @@ CREATE TABLE `info_pengirim` (
 --
 
 INSERT INTO `info_pengirim` (`id_pengirim`, `nama_pengirim`, `no_telp`, `alamat`, `kode_pos`) VALUES
-('NVVY', 'Deli Susanto', '082777263726', 'Jl. Bunga Seroja, Arjosari', '67263'),
-('PFGW', 'Deli Susanto', '082777263726', 'Jl. Bunga Seroja, Arjosari', '67263');
+('13T5', 'Djaja', '089123123123', 'Jl. Sembarang', '12345'),
+('E5SV', 'Djaja', '089123123123', 'Jl. Sembarang', '12345'),
+('GLT5', 'Djaja', '089123123123', 'Jl. Sembarang', '12345'),
+('LS1C', 'Djaja', '089123123123', 'Jl. Sembarang', '12345');
 
 -- --------------------------------------------------------
 
@@ -276,7 +286,8 @@ INSERT INTO `kota` (`id_kota`, `nama_kota`) VALUES
 ('32S4', 'MALANG'),
 ('7Q9W', 'BALIKPAPAN'),
 ('ABPT', 'BLITAR'),
-('INPK', 'SURABAYA');
+('INPK', 'SURABAYA'),
+('QKHW', 'BANYUWANGI');
 
 -- --------------------------------------------------------
 
@@ -310,16 +321,20 @@ CREATE TABLE `pelanggan` (
   `id_pelanggan` char(4) NOT NULL,
   `nama_pelanggan` varchar(45) NOT NULL,
   `email` varchar(35) NOT NULL,
-  `no_telp` char(13) NOT NULL
+  `no_telp` char(13) NOT NULL,
+  `gambar` varchar(50) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Dumping data untuk tabel `pelanggan`
 --
 
-INSERT INTO `pelanggan` (`id_pelanggan`, `nama_pelanggan`, `email`, `no_telp`) VALUES
-('KVIB', 'Alvin Riananda', 'alvin@gmail.com', '123'),
-('VHND', 'Rizky Abdillah', 'rizkyaks@gmail.com', '089521256551');
+INSERT INTO `pelanggan` (`id_pelanggan`, `nama_pelanggan`, `email`, `no_telp`, `gambar`) VALUES
+('9SQG', 'Rizky Abdillah', 'rizkyaks@gmail.com', '089521256551', '1611121059_3fb45be604b21e2f86d2.png'),
+('ASI1', 'Alvin Riananda', 'alvin@email.com', '089123123123', '1625914843_c6f00cae898bf6613a7b.png'),
+('DKZS', 'Joshua', 'joshua@email.com', '089123123123', ''),
+('FRYE', 'Joshua', 'josh@email.com', '089123123123', ''),
+('VSC4', 'M Djaja S', 'mdjajas@email.com', '089123123123', '');
 
 -- --------------------------------------------------------
 
@@ -346,8 +361,10 @@ CREATE TABLE `transaksi` (
 --
 
 INSERT INTO `transaksi` (`no_resi`, `tanggal_transaksi`, `tanggal_diterima`, `tanggal_penjemputan`, `id_pengirim`, `id_penerima`, `id_barang`, `id_jalur`, `id_kargo`, `metode_pembayaran`, `status`) VALUES
-('EX02514', '2021-01-15', '0000-00-00', '2021-01-15', 'PFGW', 'BMG2', 'F1XR', 'XSQO', '7H32', 'CASH', 'ARRIVED'),
-('EX63189', '2021-01-13', '0000-00-00', '2021-01-14', 'NVVY', 'SGIJ', 'YLEJ', 'XSQO', '7H32', 'CASH', 'NOT PAID');
+('EX36792', '2021-04-22', '0000-00-00', '2021-04-22', 'GLT5', '86YC', 'RHNR', 'J2YR', '7H32', 'CASH', 'NOT PAID'),
+('EX57832', '2021-04-22', '0000-00-00', '2021-04-24', '13T5', '0KRY', 'P60A', 'EJVH', '2K82', 'CASH', 'SHIPPED'),
+('EX57962', '2021-07-08', '0000-00-00', '2021-07-08', 'LS1C', 'H0VN', '7D3M', 'NM1E', '2K82', 'CASH', 'SHIPPED'),
+('EX90523', '2021-07-08', '0000-00-00', '2021-07-08', 'E5SV', 'I4XN', 'QCYY', 'EJVH', '2K82', 'CASH', 'ARRIVED');
 
 -- --------------------------------------------------------
 
@@ -367,10 +384,13 @@ CREATE TABLE `user` (
 --
 
 INSERT INTO `user` (`id_user`, `username`, `password`, `level`) VALUES
-('2S32', 'budip', '$2y$10$qdnyFESZP3TdBE4Qnyb99OAPXmfWuV9ihMcWTxUUhg7kgouUh1W/y', 'pegawai'),
+('2S32', 'budip', '$2y$10$NOeFEUp4Prt/Gf5v.kSTp.qlz2iQs1QIl5pJL8rf0no1iyHaQ9oWa', 'pegawai'),
 ('8HK3', 'admin', '$2y$10$atdK9PA2MHHssvQnRAl8e.kUjbgOWlMjQqMpAiitCQq7WxhwKdpJK', 'admin'),
-('KVIB', 'alvincuy', '$2y$10$XMPRgU92zHo78Rfp7Vm.pe9CQORD46SNgb32p1uWs7.nVoVBs5H8G', 'pelanggan'),
-('VHND', 'rizkyabd', '$2y$10$F38c.lYsPX3475a5IvaVHO5iqoPg/WWLz.oormDX35Roh1LiZdWzK', 'pelanggan');
+('9SQG', 'rizky', '$2y$10$p208P28LtZBhiSeusOy8beOx6A27udeDe5O6UfIk1z9aJgXy08Emq', 'pelanggan'),
+('ASI1', 'alvincuy', '$2y$10$OgJeF/BmTcMx9JSUGdsbl.Cn2636xqKQp0kcp4SljUjMMrH30SFhG', 'pelanggan'),
+('DKZS', 'josh', '$2y$10$dI3H6hTirXnpOuoy9rchMeuZWPeDNdMnvHKwHpmgkntz8pb6Dtxvu', 'pelanggan'),
+('FRYE', 'josh1', '$2y$10$5PV1emvJGIc/ynBuFYt0dezsdzrRX7LFYZsTYxZloDqu4RKkR3Rz2', 'pelanggan'),
+('VSC4', 'djajas', '$2y$10$oFZfZ3OmvOIM/xd14N5nq.AOGT1hBOeB2UmblaBHd0gdFDTRCHY4m', 'pelanggan');
 
 -- --------------------------------------------------------
 
@@ -398,6 +418,7 @@ CREATE TABLE `VIEW_DETAIL_JALUR` (
 ,`id_kargo` char(4)
 ,`nama_kargo` varchar(35)
 ,`harga` int(11)
+,`status` varchar(3)
 );
 
 -- --------------------------------------------------------
@@ -451,6 +472,7 @@ CREATE TABLE `VIEW_PELANGGAN` (
 ,`email` varchar(35)
 ,`no_telp` char(13)
 ,`username` varchar(35)
+,`gambar` varchar(50)
 );
 
 -- --------------------------------------------------------
@@ -485,7 +507,7 @@ CREATE ALGORITHM=UNDEFINED SQL SECURITY DEFINER VIEW `VIEW_CEK_HARGA`  AS  selec
 --
 DROP TABLE IF EXISTS `VIEW_DETAIL_JALUR`;
 
-CREATE ALGORITHM=UNDEFINED SQL SECURITY DEFINER VIEW `VIEW_DETAIL_JALUR`  AS  select `detail_jalur`.`id_jalur` AS `id_jalur`,`detail_jalur`.`id_kargo` AS `id_kargo`,`nama_kargo` AS `nama_kargo`,`detail_jalur`.`harga` AS `harga` from (`detail_jalur` join `kargo`) where `detail_jalur`.`id_kargo` = `kargo`.`id_kargo` ;
+CREATE ALGORITHM=UNDEFINED SQL SECURITY DEFINER VIEW `VIEW_DETAIL_JALUR`  AS  select `detail_jalur`.`id_jalur` AS `id_jalur`,`detail_jalur`.`id_kargo` AS `id_kargo`,`nama_kargo` AS `nama_kargo`,`detail_jalur`.`harga` AS `harga`,`detail_jalur`.`status` AS `status` from (`detail_jalur` join `kargo`) where `detail_jalur`.`id_kargo` = `kargo`.`id_kargo` ;
 
 -- --------------------------------------------------------
 
@@ -521,7 +543,7 @@ CREATE ALGORITHM=UNDEFINED SQL SECURITY DEFINER VIEW `VIEW_PEGAWAI`  AS  select 
 --
 DROP TABLE IF EXISTS `VIEW_PELANGGAN`;
 
-CREATE ALGORITHM=UNDEFINED SQL SECURITY DEFINER VIEW `VIEW_PELANGGAN`  AS  select `pelanggan`.`id_pelanggan` AS `id_pelanggan`,`pelanggan`.`nama_pelanggan` AS `nama_pelanggan`,`pelanggan`.`email` AS `email`,`pelanggan`.`no_telp` AS `no_telp`,`user`.`username` AS `username` from (`pelanggan` join `user`) where `pelanggan`.`id_pelanggan` = `user`.`id_user` and `user`.`level` = 'pelanggan' ;
+CREATE ALGORITHM=UNDEFINED SQL SECURITY DEFINER VIEW `VIEW_PELANGGAN`  AS  select `pelanggan`.`id_pelanggan` AS `id_pelanggan`,`pelanggan`.`nama_pelanggan` AS `nama_pelanggan`,`pelanggan`.`email` AS `email`,`pelanggan`.`no_telp` AS `no_telp`,`user`.`username` AS `username`,`pelanggan`.`gambar` AS `gambar` from (`pelanggan` join `user`) where `pelanggan`.`id_pelanggan` = `user`.`id_user` and `user`.`level` = 'pelanggan' ;
 
 -- --------------------------------------------------------
 
